@@ -19,7 +19,7 @@ recommendations and insights based on the user's data.
 3. Database: MongoDB 
 4. Additional Technologies: JWT for authentication, D3.js for data visualization
 
-##### Project Rubric
+##### Project Rubric:
 1.	Rubric Submission (5 points)
       1. Ensure timely submission and review of the rubric with a TA.
 2.	Languages/Frameworks Used (35 points)
@@ -30,10 +30,18 @@ recommendations and insights based on the user's data.
 3.	Functionality (50 points)
       1. User Authentication and Profile Management: 10 points for implementing secure user authentication and profile management.
       2. Activity Logging and Goal Tracking: 15 points for developing the core functionalities allowing users to log activities and track their health goals.
+         1. Users can input data and the web can automatically generate related data (5 points)
+         2. Users can tract their own data (5 points)
+         3. Users can select favorites and the dashboard only shows selected data while others are folded (5 points)
       3. Data Visualization: 15 points for integrating D3.js to provide insightful visualizations of the user's health data.
+         1. The web supports view data in bar graphs with selected period (week, month, year) (5 points)
+         2. Users can view data change in curve graphs (5 points)
+         3. All graphs are generated correctly (5 points)
       4. Personalized Insights: 10 points for generating personalized health tips and recommendations based on user data.
 4.	Best Practices (5 points)
       1. Code Quality: for writing clean, readable, and well-documented code.
       2. HTML/CSS Validation: for ensuring all pages pass HTML and CSS validation without errors.
 5.	Creative Portion (5 points)
+
+### <font color = "lightgreen"> Approved by: Jefferson Koonce </font>
 
