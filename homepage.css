@@ -1,0 +1,266 @@
+/*
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+!* Style the top navigation bar *!
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+!* Style the topnav links *!
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+!* Change color on hover *!
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#login-btn {
+    float: right;
+}
+
+!* Style the content *!
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    height: 90%;
+}
+
+!* Style the footer *!
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.dialog {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog_content {
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px darkgray;
+}
+.aclose{
+    width: 500px;
+    height: 60px;
+    text-align: center;
+}
+.aclose span{
+    line-height: 70px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.contain{
+    width: 500px;
+    height: 230px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    margin-right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}*/
+
+/* Reset styles to ensure consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+/* Top navigation bar styles */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#login-btn {
+    float: right;
+}
+
+/* Content styles */
+.content {
+    padding: 10px;
+    text-align: center;
+    min-height: 90%;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Dialog (modal) styles */
+.dialog {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog_content {
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjusted to be narrower */
+    box-shadow: 0 0 5px 5px darkgray;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+form input[type='number'],
+form input[type='date'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form button[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+form button[type='submit']:hover {
+    background-color: #4cae4c;
+}
+
+/* Results styles */
+.form-results {
+    background-color: #e2e2e2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-results p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}
+
+/* Additional styles to improve layout */
+/* Add as needed */
+.message-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: #333;
+    text-align: center;
+    width: 500px; /* Set a fixed width */
+    margin-left: auto; /* Automatically adjust the left margin */
+    margin-right: auto; /* Automatically adjust the right margin */
+}
+
+.message-container p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
